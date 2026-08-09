@@ -139,8 +139,8 @@ a:hover {
   min-height: calc(100svh - 4.75rem);
   padding-block: clamp(4rem, 9vw, 8rem);
   align-items: center;
-  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
-  gap: clamp(2.5rem, 7vw, 7rem);
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
+  gap: clamp(2.5rem, 6vw, 5rem);
 }
 
 .eyebrow {
@@ -195,6 +195,19 @@ h3 {
   max-width: 64ch;
   margin: 1rem 0 0;
   color: #3d514f;
+}
+
+.hero-note del {
+  color: #8e4435;
+  text-decoration-color: var(--coral);
+  text-decoration-thickness: 0.14em;
+}
+
+.hero-note ins {
+  margin-left: 0.15rem;
+  color: var(--teal);
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .button-row,
@@ -267,7 +280,9 @@ h3 {
 
 .hero-portrait {
   position: relative;
+  width: min(100%, 360px);
   margin: 0;
+  justify-self: end;
 }
 
 .hero-portrait::before {
@@ -287,13 +302,6 @@ h3 {
   box-shadow: var(--shadow);
   object-fit: cover;
   object-position: 64% center;
-}
-
-.hero-portrait figcaption {
-  margin: 0.8rem 1.25rem 0;
-  color: #52615f;
-  font-size: 0.78rem;
-  text-align: center;
 }
 
 .section {
@@ -331,6 +339,14 @@ h3 {
   margin: 0 0 0.3rem;
 }
 
+.centered-heading {
+  text-align: center;
+}
+
+.centered-heading h2 {
+  max-width: none;
+}
+
 .focus-grid,
 .project-grid {
   display: grid;
@@ -342,30 +358,22 @@ h3 {
 }
 
 .focus-card {
-  min-height: 25rem;
+  display: grid;
+  min-height: 13rem;
   padding: clamp(1.5rem, 3vw, 2.25rem);
+  place-items: center;
   border: 1px solid var(--line-light);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.035);
+  text-align: center;
 }
 
 .focus-card h3 {
-  max-width: 15ch;
-  margin-top: auto;
+  max-width: 18ch;
+  margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.65rem, 2.5vw, 2.25rem);
   font-weight: 500;
-}
-
-.focus-card p:last-child {
-  color: rgba(255, 255, 255, 0.73);
-}
-
-.card-number {
-  margin: 0 0 8rem;
-  color: var(--coral);
-  font-size: 0.8rem;
-  font-weight: 800;
 }
 
 .project-grid {
@@ -525,6 +533,27 @@ h3 {
   text-transform: uppercase;
 }
 
+.cv-section {
+  background: var(--paper);
+}
+
+.cv-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cv-preview {
+  display: block;
+  width: 100%;
+  height: min(82vh, 900px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
 .experience-grid,
 .community-grid,
 .contact-grid {
@@ -639,17 +668,23 @@ h3 {
 
 .community-grid {
   align-items: center;
-  grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
 }
 
 .community-photo {
+  width: min(100%, 420px);
   margin: 0;
+  justify-self: center;
   transform: rotate(-1.5deg);
 }
 
 .community-photo img {
-  border: 0.75rem solid var(--card);
+  width: 100%;
+  aspect-ratio: 1;
+  border: 0.55rem solid var(--card);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+  object-position: center;
 }
 
 .community-grid h2 {
@@ -864,18 +899,6 @@ h3 {
   font-weight: 800;
 }
 
-.tool-notes {
-  margin-top: 1rem;
-  padding: 1rem 1.2rem;
-  border-left: 4px solid var(--gold);
-  background: rgba(212, 166, 59, 0.12);
-  font-size: 0.84rem;
-}
-
-.tool-notes p {
-  margin: 0;
-}
-
 .tools-list {
   display: grid;
   padding-bottom: clamp(5rem, 9vw, 9rem);
@@ -920,8 +943,9 @@ h3 {
   }
 
   .hero-portrait {
-    width: min(600px, 90%);
+    width: min(360px, 76vw);
     margin-inline: auto;
+    justify-self: center;
   }
 
   .focus-grid {
@@ -932,16 +956,12 @@ h3 {
     min-height: 0;
   }
 
-  .card-number {
-    margin-bottom: 4rem;
-  }
-
   .skills-panel {
     max-width: 680px;
   }
 
   .community-photo {
-    max-width: 720px;
+    max-width: 420px;
   }
 }
 
@@ -1001,6 +1021,15 @@ h3 {
 
   .field-row {
     grid-template-columns: 1fr;
+  }
+
+  .cv-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cv-preview {
+    height: 72vh;
   }
 }
 

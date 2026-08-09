@@ -1,6 +1,6 @@
 # ludode.github.io
 
-Personal research site for Alessio Ludovico De Santis. It is deliberately a small static site: plain HTML and CSS, with JavaScript only where a tool needs it.
+My personal research website and browser tools.
 
 ## Local preview
 
@@ -30,8 +30,8 @@ Run its tests with:
 node --test tools/gbm-orbit-windows/calculator.test.mjs
 ```
 
-When adding another tool, give it a self-contained folder and add a card to `tools/index.html` and the software section on the home page. Keeping the calculation in a separate module makes it possible to test without a browser.
+Each tool gets its own folder under `tools/`, plus a card on `tools/index.html` and in the software section of the home page. Keep calculations in a separate module so they can be tested with Node.
 
 ## Content sources
 
-Biographical information comes from the current CV and verified public profiles. Publications are intentionally a selected list; ORCID and INSPIRE are linked for the full record.
+Biographical information comes from my current CV and public profiles. The website only shows a selection of publications; the full list is in the CV.
