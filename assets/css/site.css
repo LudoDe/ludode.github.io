@@ -279,11 +279,15 @@ h3 {
   font-weight: 700;
 }
 
+.hero-profile {
+  width: min(100%, 360px);
+  justify-self: end;
+}
+
 .hero-portrait {
   position: relative;
-  width: min(100%, 360px);
+  width: 100%;
   margin: 0;
-  justify-self: end;
 }
 
 .hero-portrait::before {
@@ -303,6 +307,26 @@ h3 {
   box-shadow: var(--shadow);
   object-fit: cover;
   object-position: 64% center;
+}
+
+.portrait-links {
+  display: grid;
+  margin-top: 1.15rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.portrait-links a {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.portrait-links a:hover {
+  color: var(--teal);
 }
 
 .section {
@@ -359,10 +383,13 @@ h3 {
 }
 
 .focus-card {
-  display: grid;
-  min-height: 13rem;
+  display: flex;
+  min-height: 19rem;
   padding: clamp(1.5rem, 3vw, 2.25rem);
-  place-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.9rem;
   border: 1px solid var(--line-light);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.035);
@@ -375,6 +402,13 @@ h3 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.65rem, 2.5vw, 2.25rem);
   font-weight: 500;
+}
+
+.focus-card p {
+  max-width: 34ch;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.73);
+  font-size: 0.91rem;
 }
 
 .project-grid {
@@ -543,6 +577,20 @@ h3 {
   align-items: end;
   justify-content: space-between;
   gap: 2rem;
+}
+
+.cv-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.85rem 1rem;
+}
+
+.cv-secondary-link {
+  color: #52615f;
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 .cv-preview {
@@ -755,6 +803,11 @@ h3 {
   margin: 0;
 }
 
+.footer-disclaimer {
+  max-width: 62ch;
+  text-align: right;
+}
+
 /* Shared tool pages */
 .subpage-hero {
   padding-block: clamp(4rem, 9vw, 8rem) clamp(3rem, 6vw, 5rem);
@@ -943,7 +996,7 @@ h3 {
     max-width: 760px;
   }
 
-  .hero-portrait {
+  .hero-profile {
     width: min(360px, 76vw);
     margin-inline: auto;
     justify-self: center;
@@ -1029,8 +1082,17 @@ h3 {
     flex-direction: column;
   }
 
+  .cv-actions {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
   .cv-preview {
     height: 72vh;
+  }
+
+  .footer-disclaimer {
+    text-align: left;
   }
 }
 

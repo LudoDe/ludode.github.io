@@ -35,3 +35,6 @@ Each tool gets its own folder under `tools/`, plus a card on `tools/index.html` 
 ## Content sources
 
 Biographical information comes from my current CV and public profiles. The website only shows a selection of publications; the full list is in the CV.
+
+- `AlessioLudovicoDeSantisCV.pdf` is the academic CV shown in the page preview.
+- `AlessioLudovicoDeSantisCV-Industry.pdf` is the shorter industry CV linked underneath it.

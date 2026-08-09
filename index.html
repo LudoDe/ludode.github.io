@@ -66,9 +66,9 @@
   <main id="main-content">
     <section class="hero shell" id="top">
       <div class="hero-copy">
-        <p class="eyebrow">I am Alessio Ludovico. Everybody calls me Ludo.</p>
+        <p class="eyebrow">Alessio Ludovico De Santis (Ludo) · PhD candidate</p>
         <h1>Astrophysics from signal to software.</h1>
-        <p class="hero-lead">Hi, I’m Ludo. I am a PhD candidate at the Gran Sasso Science Institute. I work on high-energy astrophysics, especially the multi-messenger approach to transients such as binary neutron-star mergers and supernovae. I am actively engaged in making forecasts for next-generation detectors, leveraging the synergy between space- and ground-based observatories.</p>
+        <p class="hero-lead">My research focuses on high-energy astrophysics, especially the multi-messenger approach to transients such as binary neutron-star mergers and supernovae. I make forecasts for next-generation detectors by studying how space- and ground-based observatories can work together.</p>
         <p class="hero-note">This usually involves Monte Carlo simulations, Bayesian inference, detector forecasts and an unreasonable amount of <del>bugs</del> <ins>data</ins>.</p>
         <div class="button-row">
           <a class="button button-primary" href="#software">Explore the software</a>
@@ -81,9 +81,17 @@
           <li>Scientific Python</li>
         </ul>
       </div>
-      <figure class="hero-portrait">
-        <img src="images/profile.webp" width="1600" height="1067" alt="Alessio Ludovico De Santis smiling in front of a brick wall">
-      </figure>
+      <div class="hero-profile">
+        <figure class="hero-portrait">
+          <img src="images/profile.webp" width="1600" height="1067" alt="Alessio Ludovico De Santis smiling in front of a brick wall">
+        </figure>
+        <nav class="portrait-links" aria-label="Email and profile links">
+          <a href="mailto:alessio.desantis@gssi.it">Email</a>
+          <a href="https://orcid.org/0009-0005-4288-3758" rel="me">ORCID</a>
+          <a href="https://github.com/LudoDe" rel="me">GitHub</a>
+          <a href="https://www.linkedin.com/in/alessio-ludovico-de-santis" rel="me">LinkedIn</a>
+        </nav>
+      </div>
     </section>
 
     <section class="section section-ink" id="research">
@@ -94,13 +102,16 @@
         </div>
         <div class="focus-grid">
           <article class="focus-card">
-            <h3>Compact objects &amp; short GRBs</h3>
+            <h3>High-Energy Astrophysics</h3>
+            <p>I analyse gamma-ray and X-ray observations of gamma-ray bursts, study their populations, model their emission and work on the physical interpretation of high-energy transients.</p>
           </article>
           <article class="focus-card">
-            <h3>Next-generation observatories</h3>
+            <h3>Multi-Messenger Transients</h3>
+            <p>I study binary neutron-star mergers and core-collapse supernovae by combining gravitational-wave, electromagnetic and neutrino information.</p>
           </article>
           <article class="focus-card">
-            <h3>Supernovae &amp; detector physics</h3>
+            <h3>Next-Generation Observatories</h3>
+            <p>I make forecasts for Einstein Telescope, Cosmic Explorer, THESEUS and other future detectors, focusing on what we can learn when ground- and space-based observatories see the same event.</p>
           </article>
         </div>
       </div>
@@ -248,11 +259,17 @@
     <section class="section cv-section" id="cv">
       <div class="shell">
         <div class="section-heading cv-heading">
-          <h2>Curriculum vitae.</h2>
-          <a class="button button-quiet" href="AlessioLudovicoDeSantisCV.pdf" target="_blank" rel="noopener">Open the PDF <span aria-hidden="true">↗</span></a>
+          <div>
+            <p class="eyebrow">Academic CV</p>
+            <h2>Curriculum vitae.</h2>
+          </div>
+          <div class="cv-actions">
+            <a class="button button-quiet" href="AlessioLudovicoDeSantisCV.pdf" target="_blank" rel="noopener">Open academic CV <span aria-hidden="true">↗</span></a>
+            <a class="cv-secondary-link" href="AlessioLudovicoDeSantisCV-Industry.pdf" target="_blank" rel="noopener">Industry CV</a>
+          </div>
         </div>
-        <object class="cv-preview" data="AlessioLudovicoDeSantisCV.pdf#view=FitH" type="application/pdf" title="Preview of Alessio Ludovico De Santis's curriculum vitae">
-          <p>Your browser cannot show the preview. <a href="AlessioLudovicoDeSantisCV.pdf">Open the CV as a PDF.</a></p>
+        <object class="cv-preview" data="AlessioLudovicoDeSantisCV.pdf#view=FitH" type="application/pdf" title="Preview of Alessio Ludovico De Santis's academic curriculum vitae">
+          <p>Your browser cannot show the preview. <a href="AlessioLudovicoDeSantisCV.pdf">Open the academic CV as a PDF.</a></p>
         </object>
       </div>
     </section>
@@ -339,6 +356,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© 2026 Alessio Ludovico De Santis.</p>
+      <p class="footer-disclaimer">Personal website. The views here are my own and do not represent GSSI or my collaborators.</p>
     </div>
   </footer>
 </body>
