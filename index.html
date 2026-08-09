@@ -1,250 +1,363 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Website by Doctoral Candidate at Gran Sasso Science Institute, L'Aquila, Italy Alessio Ludovico De Santis
--->
-<html>
-	<!-- 	This is the "Head" of the HTML document.
-		It contains information that isn't displayed on the actual page, but is useful
-		for the web browser when loading the page	
-	-->
-	<head>
-		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>Alessio Ludovico De Santis</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
-			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
-			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
-			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
-		-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
-			will load a separate set of CSS stylings from the file assets/css/noscript.css
-			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
-			available. 
-		-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<!-- The body is the location where your site's content will go -->
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alessio Ludovico De Santis (Ludo) | High-Energy Astrophysics</title>
+  <meta name="description" content="Alessio Ludovico De Santis, known as Ludo, is a PhD candidate at GSSI working on high-energy astrophysics, multi-messenger transients and next-generation detectors.">
+  <meta name="author" content="Alessio Ludovico De Santis">
+  <meta name="theme-color" content="#0a6b65">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alessio Ludovico De Santis (Ludo) | High-Energy Astrophysics">
+  <meta property="og:description" content="Multi-messenger astrophysics, data analysis and research software.">
+  <meta property="og:url" content="https://ludode.github.io/">
+  <meta property="og:image" content="https://ludode.github.io/images/profile.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://ludode.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alessio Ludovico De Santis",
+    "alternateName": "Ludo",
+    "url": "https://ludode.github.io/",
+    "image": "https://ludode.github.io/images/profile.webp",
+    "jobTitle": "PhD Candidate in Astroparticle Physics",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Gran Sasso Science Institute",
+      "url": "https://www.gssi.it/"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Sapienza University of Rome"
+    },
+    "sameAs": [
+      "https://github.com/LudoDe",
+      "https://orcid.org/0009-0005-4288-3758",
+      "https://inspirehep.net/authors/2790466",
+      "https://www.linkedin.com/in/alessio-ludovico-de-santis"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-			<!-- This "div" wraps around all of our content and just changes how things are layed out -->
-			<div id="wrapper">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Alessio Ludovico De Santis, home">
+        <span class="wordmark-mark" aria-hidden="true">AL</span>
+        <span>Alessio Ludovico De Santis</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#research">Research interests</a>
+        <a href="#software">Software</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-					<!-- This is where the content that appears on page load exists -->
-					<header id="header">
-						<!-- This is the main content of the front page -->
-						<div class="content">
-							<div class="inner">
-								<!-- Here is a heading where you can put your name -->
-								<h1>
-									Alessio Ludovico De Santis
-								</h1>
-								<!-- 	Here is an image where you can put a picture of you. 
-									You can change the width and height attributes below to change how large
-									your image is.
+  <main id="main-content">
+    <section class="hero shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Alessio Ludovico De Santis (Ludo) · PhD candidate</p>
+        <h1>Astrophysics from signal to software.</h1>
+        <p class="hero-lead">My research focuses on high-energy astrophysics, especially the multi-messenger approach to transients such as binary neutron-star mergers and supernovae. I make forecasts for next-generation detectors by studying how space- and ground-based observatories can work together.</p>
+        <p class="hero-note">This usually involves Monte Carlo simulations, Bayesian inference, detector forecasts and an unreasonable amount of <del>bugs</del> <ins>data</ins>.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="#software">Explore the software</a>
+          <a class="button button-quiet" href="AlessioLudovicoDeSantisCV.pdf" target="_blank" rel="noopener">Read my CV <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="signal-list" aria-label="Current focus">
+          <li>Gravitational waves</li>
+          <li>Gamma rays</li>
+          <li>Neutrinos</li>
+          <li>Scientific Python</li>
+        </ul>
+      </div>
+      <div class="hero-profile">
+        <figure class="hero-portrait">
+          <img src="images/profile.webp" width="1600" height="1067" alt="Alessio Ludovico De Santis smiling in front of a brick wall">
+        </figure>
+        <nav class="portrait-links" aria-label="Email and profile links">
+          <a href="mailto:alessio.desantis@gssi.it">Email</a>
+          <a href="https://orcid.org/0009-0005-4288-3758" rel="me">ORCID</a>
+          <a href="https://github.com/LudoDe" rel="me">GitHub</a>
+          <a href="https://www.linkedin.com/in/alessio-ludovico-de-santis" rel="me">LinkedIn</a>
+        </nav>
+      </div>
+    </section>
 
-									Try adding "border-radius: 50%;" to the style attribute.
-								-->
-								<img src="images/BestPicture.jpg" alt="Alessio Ludovico De Santis In Front of the Bertinoro Castle" style="width:280px; height:360px; object-fit: cover;">
-								<!-- 	Here is a paragraph where you can put your position and institution, or
-									a short line about yourself.
-								-->
-								<h2>
-									PhD <br> Gran Sasso Science Institute (GSSI)
-								</h2>
-								<!-- Here is a paragraph where you can put a link to your CV -->
-								<p>
-									I work on designing and simulating <b> cryogenic detectors </b> mainly focused on the 
-									detection of <b> neutrinos</b>, through neutrino-nucleus scattering (<b>CEvNS</b>). In the 
-									past reactor neutrinos, however most recently I have pivoted towards the 
-									detection of <b>supernova neutrinos</b>. In tandem with my work on detectors I 
-									study the <b>multimessenger</b> approach to the future detection of the next 
-									galactic supernova
-									<br>
-									
-									
-								</p>
+    <section class="section section-ink" id="research">
+      <div class="shell">
+        <div class="section-heading centered-heading">
+          <h2>Research interests.</h2>
+          <!-- Add a short introduction to the research interests here when ready. -->
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <h3>High-Energy Astrophysics</h3>
+            <p>I analyse gamma-ray and X-ray observations of gamma-ray bursts, study their populations, model their emission and work on the physical interpretation of high-energy transients.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Multi-Messenger Transients</h3>
+            <p>I study binary neutron-star mergers and core-collapse supernovae by combining gravitational-wave, electromagnetic and neutrino information.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Next-Generation Observatories</h3>
+            <p>I make forecasts for Einstein Telescope, Cosmic Explorer, THESEUS and other future detectors, focusing on what we can learn when ground- and space-based observatories see the same event.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-								
-							</div>
-							<div>
-								<h2>
-									<b><a href="AlessioLudovicoDeSantisCV.pdf" target="_blank">Curriculum Vitae</a></b>
-								</h2>
-							</div>
-						</div>
-						<!-- This is the navigation menu -->
-						<nav>
-							<!-- This element makes an "Unordered List" -->
-							<ul>
-								<!-- This is a "List Item" -->
-								<li>
-									<!-- 	Note that this links to #about, which will move the page to wherever
-										the element with the id "about" exists.
-									-->
-									<a href="#about">About Me</a>
-								</li>
-								<li>
-									<a href="#research">Research</a>
-								</li>
-								<li>
-									<a href="#community">Community</a>
-								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-								<!-- 	You can add another button to your navigation menu by adding
-									another List Item with a link inside of it.
-								-->
-								<!-- <li>
-									<a href="images/Astronomy.jpg">My CV</a>
-								</li> -->
-							</ul>
-						</nav>
-					</header>
+    <section class="section" id="software">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Software &amp; tools</p>
+            <h2>Code I built for my analyses.</h2>
+          </div>
+          <p>I feel science should be reproducible and accessible. Here you can find the software tools I have used in my research, with some of them actually working in the browser.</p>
+        </div>
 
-					<!-- These are the "cards" that appear when you click the buttons on the main page -->
-					<div id="main">
-						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous 
-							button links to.
-						-->
-						<article id="about">
-							<h2 class="major">About Me</h2>
-							<!-- Here is an image that you can customize for this page -->
-							<span class="image main">
-								<img src="images/pic01.jpg" alt=""/>
-							</span>
-							<!-- Here are three paragraphs where you can fill out information about yourself -->
-							<p>
-								<!-- Items contained in <b> tags are bolded! -->
-								<b>Education:</b>
-							</p>
-							<p>
-								<b>Research Interests:</b>
-							</p>
-							<p>
-								<b>Publications:</b> <a href="https://ui.adsabs.harvard.edu/">Include ADS link!</a>
-							</p>
-						</article>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-topline">
+              <span class="status status-live">Active · published 2026</span>
+              <span class="project-code">Python</span>
+            </div>
+            <h3>MAGGPY</h3>
+            <p class="project-name">Multimessenger Astronomy for GRBs and Gravitational Waves in Python</p>
+            <p>A public Monte Carlo and MCMC package for simulating short-GRB populations, fitting them to the Fermi/GBM catalogue and forecasting joint gravitational-wave and electromagnetic detections.</p>
+            <ul class="tag-list" aria-label="MAGGPY methods">
+              <li>Monte Carlo</li><li>MCMC</li><li>Fermi/GBM</li><li>GWFish</li>
+            </ul>
+            <div class="text-links">
+              <a href="https://github.com/LudoDe/MAGGPY">Code <span aria-hidden="true">↗</span></a>
+              <a href="https://pypi.org/project/maggpy/">PyPI <span aria-hidden="true">↗</span></a>
+              <a href="https://www.acme-astro.eu/maggpy/">ACME <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.1051/0004-6361/202659597">Paper <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
 
-						<!-- Here is the "Research" card. -->
-						<article id="research">
-							<h2 class="major">Research</h2>
-							<span class="image main">
-								<img src="images/pic02.jpg" alt=""/>
-							</span>
-							<p>
-								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
-									the next line.
-								-->
-								<b>Project I Title</b><br>Project description, including further links to posters, talks, publications.
-							</p>
-							<p>
-								<b>Project II Title</b><br>Project description, including further links to posters, talks, publications.
-							</p>
-						</article>
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="status status-progress">Desktop v1.3 · web work started</span>
+              <span class="project-code">Python / browser</span>
+            </div>
+            <h3>GBM Orbital Subtraction</h3>
+            <p>Background estimation for long Fermi/GBM transients using neighbouring spacecraft orbits. I migrated the original Python 2 code, added a modern GUI and used it in analyses of the BOAT and ultra-long MeV transients.</p>
+            <div class="text-links">
+              <a href="https://github.com/LudoDe/OrbitalSubtractionGBM">Desktop code <span aria-hidden="true">↗</span></a>
+              <a href="tools/gbm-orbit-windows/">Try the first browser component <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
 
-						<!-- Here is the "Community" card. -->
-						<article id="community">
-							<h2 class="major">Community</h2>
-							<span class="image main">
-								<img src="images/FOTOBELLA(1)(1).png" alt="Alessio Ludovico De Santis explaining the curvature of space to elementary school children"/>
-							</span>
-							<p>
-								<b>Teaching:</b>
-							</p>
-							<p>
-								<b>Outreach: "Space Explorers", by Marica Branchesi, an outreach event aimed to get young children interested in space related sciences including multiple activities. </b>
-							</p>
-							<p>
-								<b>Equity & Inclusion:</b>
-							</p>
-						</article>
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="status">Research software</span>
+              <span class="project-code">Python</span>
+            </div>
+            <h3>CAPIBARA</h3>
+            <p>Ballistic ray-tracing simulations for athermal phonons in cryogenic detectors, developed with experimental physicists to investigate unexpected sensor behaviour.</p>
+            <div class="text-links">
+              <a href="https://github.com/LudoDe/CAPIBARA">Code <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.5281/zenodo.17494662">Zenodo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
 
-						<!-- Here is a the "Contact" card. -->
-						<article id="contact">
-							<h2 class="major">Contact</h2>
-							<p> 
-								<b>Email: alessio.desantis@gssi.it </b> 
-							</p>
-							<p> 
-								<b>Address: Viale Francesco Crispi, 7, 67100 L'Aquila AQ </b> 
-							</p>
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="status">Contributor</span>
+              <span class="project-code">Python</span>
+            </div>
+            <h3>GWFish</h3>
+            <p>An international Fisher-matrix framework for gravitational-wave detector forecasts. My contributions added high-frequency corrections and support for arbitrary frequency- and time-series injections, including supernova waveforms.</p>
+            <div class="text-links">
+              <a href="https://gwfish.readthedocs.io/">Documentation <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/LudoDe/GWFish_SN">My working branch <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
 
-							<!-- 	Here are the fancy icons that link to your social media.
-								These icons are rendered using Font Awesome fonts, and you can find more icons
-								here: https://fontawesome.com/icons
-							-->
-							<ul class="icons">
-								<!-- The Twitter icon -->
-								<li>
-									<!-- 	Note that you need to change the link to point to your page.
-										Replace "#" with your Twitter profile page.
-									-->
-									<a href="#" class="icon fa-twitter">
-										<span class="label">Twitter</span>
-									</a>
-								</li>
-								<!-- The Facebook icon -->
-								<li>
-									<a href="#" class="icon fa-facebook">
-										<span class="label">Facebook</span>
-									</a>
-								</li>
-								<!-- The Instagram icon -->
-								<li>
-									<a href="#" class="icon fa-instagram">
-										<span class="label">Instagram</span>
-									</a>
-								</li>
-								<!-- The GitHub icon -->
-								<li>
-									<a href="#" class="icon fa-github">
-										<span class="label">GitHub</span>
-									</a>
-								</li>
-								<!-- 	We can add a new icon by searching on the Font Awesome website
-									for the correct class name and inserting it as a new list item.
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="status">Contributor</span>
+              <span class="project-code">Python</span>
+            </div>
+            <h3>GW Targeted Detectability Range</h3>
+            <p>This pipeline uses public GWOSC strain data to estimate the detectability range of a compact-binary signal associated with an external gamma-ray trigger. I contributed the neutron star-black hole cuts.</p>
+            <div class="text-links">
+              <a href="https://samueleronchini.github.io/gw_tdr/">Open the TDR <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
 
-									We found "envelope" here: https://fontawesome.com/icons/envelope
-								-->
-								<!-- <li>
-									<a href="#" class="icon fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li> -->
-							</ul>
-						</article>
-					</div>
+        <div class="tool-callout">
+          <div>
+            <p class="eyebrow">W.I.P. browser port of OSV</p>
+            <h3>GBM orbit-window calculator</h3>
+            <p>A small working part of the desktop orbital-subtraction code. It calculates the source and ± orbit background intervals locally in your browser.</p>
+          </div>
+          <a class="button button-primary" href="tools/gbm-orbit-windows/">Open the calculator</a>
+        </div>
+      </div>
+    </section>
 
-					<!-- This is the footer that appears at the bottom of the page -->
-					<footer id="footer">
-						<!-- 	You can change "Untitled" to your name to show everyone that
-							this is your work.
-						-->
-						<p class="copyright">&copy; Alessio Ludovico De Santis. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+    <section class="section section-soft" id="publications">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Selected publications</p>
+            <h2>Recent work.</h2>
+          </div>
+          <p><a href="AlessioLudovicoDeSantisCV.pdf">The complete list is in my CV.</a></p>
+        </div>
 
-			</div>
+        <ol class="publication-list">
+          <li>
+            <p class="publication-year">2026 · First &amp; corresponding author</p>
+            <h3><a href="https://doi.org/10.1051/0004-6361/202659597">Constraining binary neutron star population synthesis models using short gamma-ray burst data</a></h3>
+            <p>Astronomy &amp; Astrophysics, 710, A388</p>
+          </li>
+          <li>
+            <p class="publication-year">2026 · Preprint</p>
+            <h3><a href="https://arxiv.org/abs/2607.26129">The ultra-fast afterglow of GRB 260226A</a></h3>
+            <p>Fermi observations of the emergence and rapid decay of a gamma-ray-burst afterglow.</p>
+          </li>
+          <li>
+            <p class="publication-year">2026 · Preprint</p>
+            <h3><a href="https://arxiv.org/abs/2607.27311">Assessing the impact of instrumental requirements on the scientific performance of the Einstein Telescope</a></h3>
+            <p>Connecting detector design choices to the science reach of a third-generation gravitational-wave observatory.</p>
+          </li>
+          <li>
+            <p class="publication-year">2026 · Preprint</p>
+            <h3><a href="https://arxiv.org/abs/2601.08532">Enhanced athermal phonon responsivity in a kinetic inductance detector with integrated phonon collectors</a></h3>
+            <p>Cryogenic detector development informed by ballistic phonon simulations.</p>
+          </li>
+          <li>
+            <p class="publication-year">2025 · Refereed article</p>
+            <h3><a href="https://www.aanda.org/articles/aa/full_html/2025/11/aa56591-25/aa56591-25.html">Ultra-long MeV transient from a relativistic jet: a tidal disruption event candidate</a></h3>
+            <p>Astronomy &amp; Astrophysics, 703, L2</p>
+          </li>
+          <li>
+            <p class="publication-year">2025 · Preprint</p>
+            <h3><a href="https://arxiv.org/abs/2507.14071">Direct measurement of the accretion disk formed in prompt-collapse mergers with future gravitational-wave observatories</a></h3>
+            <p>A proposed way to measure the remnant disk through the ringdown signal.</p>
+          </li>
+        </ol>
 
-			<!--	This is the background image of the site.
-				All configuration of the background is done with CSS.
-				Look in the file assets/css/main.css and search for "#bg" to
-				see how this element is styled. Look for comments pointing 
-				to where you can set a new background image.
-			-->
-			<div id="bg"></div>
+      </div>
+    </section>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <section class="section cv-section" id="cv">
+      <div class="shell">
+        <div class="section-heading cv-heading">
+          <div>
+            <p class="eyebrow">Academic CV</p>
+            <h2>Curriculum vitae.</h2>
+          </div>
+          <div class="cv-actions">
+            <a class="button button-quiet" href="AlessioLudovicoDeSantisCV.pdf" target="_blank" rel="noopener">Open academic CV <span aria-hidden="true">↗</span></a>
+            <a class="cv-secondary-link" href="AlessioLudovicoDeSantisCV-Industry.pdf" target="_blank" rel="noopener">Industry CV</a>
+          </div>
+        </div>
+        <object class="cv-preview" data="AlessioLudovicoDeSantisCV.pdf#view=FitH" type="application/pdf" title="Preview of Alessio Ludovico De Santis's academic curriculum vitae">
+          <p>Your browser cannot show the preview. <a href="AlessioLudovicoDeSantisCV.pdf">Open the academic CV as a PDF.</a></p>
+        </object>
+      </div>
+    </section>
 
-	</body>
+    <section class="section" id="experience">
+      <div class="shell experience-grid">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Experience &amp; education</p>
+            <h2>Where I’ve worked.</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <p class="timeline-date">2022-present</p>
+              <h3>Doctoral Researcher · GSSI</h3>
+              <p>PhD in Astroparticle Physics with Marica Branchesi, Samuele Ronchini and Filippo Santoliquido.</p>
+            </li>
+            <li>
+              <p class="timeline-date">October 2025</p>
+              <h3>Visiting PhD Researcher · Niels Bohr Institute</h3>
+              <p>Supernova-neutrino analysis and gravitational-wave template development with the Particle Astrophysics Group.</p>
+            </li>
+            <li>
+              <p class="timeline-date">April-September 2024</p>
+              <h3>Visiting PhD Researcher · Max Planck Institute for Physics</h3>
+              <p>Cryogenic-detector simulations developed alongside experimental work in Munich.</p>
+            </li>
+            <li>
+              <p class="timeline-date">2022 / 2020</p>
+              <h3>MSc and BSc in Physics · Sapienza University of Rome</h3>
+              <p>MSc in Particle and Astroparticle Physics, cum laude; BSc in Physics.</p>
+            </li>
+          </ol>
+        </div>
+
+        <aside class="skills-panel" aria-labelledby="skills-title">
+          <img src="images/crab.webp" width="900" height="900" alt="The Crab Nebula in blue, orange and green">
+          <div class="skills-copy">
+            <p class="eyebrow">Skills</p>
+            <h3 id="skills-title">Skills I learnt along the way.</h3>
+            <dl class="skills-list">
+              <div><dt>Analysis</dt><dd>Bayesian inference, Monte Carlo methods, parameter estimation, regression, uncertainty quantification and time series.</dd></div>
+              <div><dt>Code</dt><dd>Python, C++, Linux/Bash, Git, SQL, JavaScript and HTML/CSS.</dd></div>
+              <div><dt>Scientific stack</dt><dd>NumPy, SciPy, pandas, scikit-learn, matplotlib, emcee, dynesty, Astropy and GeoPandas.</dd></div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section community-section" id="community">
+      <div class="shell community-grid">
+        <figure class="community-photo">
+          <img src="images/outreach.webp" width="1600" height="874" alt="Alessio guiding children through a hands-on demonstration about curved space">
+        </figure>
+        <div>
+          <h2>Mentoring and outreach.</h2>
+          <p>I supervise a master’s student working on supernova-neutrino detection with dark-matter detectors, and I mentor new international students through the GSSI Buddies programme.</p>
+          <p>I have also been a tutor for <em>Space Explorers</em>, a speaker and organiser for <em>Scienzia in Bidda</em>, and a guide at the GSSI Visitors Centre.</p>
+          <p>Recent speaking includes an invited seminar at the Niels Bohr Institute and contributions at COSPAR, THESEUS and European Astronomical Society meetings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="shell contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Come say hi and keep me from going insane.</h2>
+          <p>I’m based at GSSI in L’Aquila, Italy. Email is the easiest way to reach me.</p>
+          <a class="contact-email" href="mailto:alessio.desantis@gssi.it">alessio.desantis@gssi.it</a>
+        </div>
+        <nav class="contact-links" aria-label="Profiles and documents">
+          <a href="https://github.com/LudoDe"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+          <a href="https://orcid.org/0009-0005-4288-3758"><span>ORCID</span><span aria-hidden="true">↗</span></a>
+          <a href="https://inspirehep.net/authors/2790466"><span>INSPIRE</span><span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/alessio-ludovico-de-santis"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+          <a href="AlessioLudovicoDeSantisCV.pdf"><span>Curriculum vitae</span><span aria-hidden="true">↓</span></a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© 2026 Alessio Ludovico De Santis.</p>
+      <p class="footer-disclaimer">Personal website. The views here are my own and do not represent GSSI or my collaborators.</p>
+    </div>
+  </footer>
+</body>
 </html>
