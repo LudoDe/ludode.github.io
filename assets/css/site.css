@@ -312,21 +312,28 @@ h3 {
 .portrait-links {
   display: grid;
   margin-top: 1.15rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .portrait-links a {
+  display: grid;
+  min-height: 3rem;
   padding: 0.55rem 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.78rem;
-  font-weight: 750;
+  place-items: center;
   text-decoration: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.portrait-links img {
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .portrait-links a:hover {
-  color: var(--teal);
+  opacity: 0.65;
+  transform: translateY(-1px);
 }
 
 .section {
