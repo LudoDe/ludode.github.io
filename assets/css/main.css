@@ -1648,3 +1648,28 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
+
+
+.portrait-links {
+  display: grid;
+  margin-top: 1.15rem;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.portrait-links a {
+  display: grid;
+  min-height: 3rem;
+  place-items: center;
+  text-decoration: none;
+}
+
+.portrait-links img {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.portrait-links a:hover {
+  opacity: 0.65;
+}
